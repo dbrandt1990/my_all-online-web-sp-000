@@ -1,6 +1,6 @@
 require 'pry'
 
-def my_all?(collection)
+def my_all?(collection, &block)
   while i < collection.size
    yield collection[i]
    binding.pry
