@@ -4,8 +4,7 @@ def my_all?(collection, &block)
   i = 0 
   return_values = []
   while i < collection.size
-   yield (collection[i])
-   binding.pry
+   return_values << yield (collection[i])
    i += 1
  end
 end
